@@ -1,108 +1,106 @@
-import React from "react";
-import {
-    Box,
-    Container,
-    Grid,
-    Card,
-    CardContent,
-    CardMedia,
-    styled,
-    Tooltip,
-    Zoom,
-} from "@mui/material";
+import { Box, Card, CardMedia, Container, styled } from '@mui/material'
+import React from 'react'
 
 const StyledCard = styled(Card)(({ theme }) => ({
-    height: "100%",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
-    transition: "all 0.3s ease-in-out",
-    backgroundColor: "transparent",
-    boxShadow: "none",
-    "&:hover": {
-        transform: "translateY(-10px)",
-    },
-}));
+	height: '100%',
+	display: 'flex',
+	flexDirection: 'column',
+	alignItems: 'center',
+	justifyContent: 'center',
+	transition: 'all 0.3s ease-in-out',
+	backgroundColor: 'transparent',
+	boxShadow: 'none',
+	'&:hover': {
+		transform: 'translateY(-10px)',
+	},
+}))
 
 const CompanyIcon = styled(CardMedia)({
-    width: "60px",
-    height: "60px",
-    margin: "0.25rem auto",
-    borderRadius: "50%",
-    border: "2px solid #1976d2",
-    padding: "2px",
-    backgroundSize: "cover",
-    transition: "transform 0.3s ease",
-    "&:hover": {
-        transform: "scale(1.1)",
-    },
-});
+	width: '60px',
+	height: '60px',
+	margin: '0.25rem auto',
+	borderRadius: '50%',
+	border: '2px solid #1976d2',
+	padding: '2px',
+	backgroundSize: 'cover',
+	transition: 'transform 0.3s ease',
+	'&:hover': {
+		transform: 'scale(1.1)',
+	},
+})
 
 const PartnersInvestors = () => {
-    const partners = [
-        {
-            name: "Tech Solutions Inc",
-            icon: "images.unsplash.com/photo-1516321497487-e288fb19713f",
-        },
-        {
-            name: "Global Innovations",
-            icon: "images.unsplash.com/photo-1454165804606-c3d57bc86b40",
-        },
-        {
-            name: "Future Systems",
-            icon: "images.unsplash.com/photo-1460925895917-afdab827c52f",
-        },
-    ];
+	const partners = [
+		{
+			name: 'Goole',
+			icon: '/assets/partners/google.svg',
+		},
+		{
+			name: 'Facebook',
+			icon: '/assets/partners/facebook.png',
+		},
+		{
+			name: 'Unity',
+			icon: 'assets/partners/unity.svg',
+		},
+		{
+			name: 'Tiktok',
+			icon: 'assets/partners/tiktok.png',
+		},
+		{
+			name: 'Ironsource',
+			icon: 'assets/partners/iron_source.png',
+		},
+		{
+			name: 'AppLovin',
+			icon: 'assets/partners/app_lovin.png',
+		},
+		{
+			name: 'AppFlyer',
+			icon: 'assets/partners/app_flyer.png',
+		},
+		{
+			name: 'Sensor Tower',
+			icon: 'assets/partners/sensor_tower.png',
+		},
+	]
 
-    return (
-        <Box
-            component="footer"
-            sx={{
-               position:"fixed",
-                width: "100vw",
-                bottom:"0"
-                
-            }}
-        >
-            <Container maxWidth="lg">
-                <Box sx={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                }}>
-                   
-                        {partners.map((partner) => (
-                            <Grid
-                                item
-                               
-                                key={partner.name}
+	return (
+		<Box
+			component='footer'
+			sx={{
+				position: 'fixed',
+				width: '100vw',
+				bottom: '0',
+			}}>
+			<Container maxWidth='lg'>
+				<Box
+					sx={{
+						display: 'grid',
+						gridTemplateColumns: 'repeat(4, 1fr)',
+						gridTemplateRows: 'repeat(2, 1fr)',
+						backgroundColor: 'rgba(0, 0, 0, .3)',
+						padding: '16px',
+					}}>
+					{partners.map((partner) => (
+						<div
+							key={partner.name}
+							style={{ maxWidth: '100px', maxHeight: '100px' }}>
+							<img
+								src={partner.icon}
+								alt={partner.name}
+								style={{
+									width: '100%',
+									height: '100%',
+									objectFit: 'contain',
+								}}
+							/>
+						</div>
+					))}
+				</Box>
+			</Container>
+		</Box>
+	)
+}
 
-                            >
-                                <Zoom in={true} style={{ transitionDelay: "200ms" }}>
-                                    <StyledCard>
-                                        <CardContent sx={{ textAlign: "center", p: 0.5 }}>
-                                            <Tooltip title="Partner" arrow placement="top">
-                                                <CompanyIcon
-                                                    component="img"
-                                                    image={`https://${partner.icon}`}
-                                                    alt={`${partner.name} icon`}
-                                                    onError={(e) => {
-                                                        e.target.src =
-                                                            "https://images.unsplash.com/photo-1557426272-fc759fdf7a8d";
-                                                    }}
-                                                />
-                                            </Tooltip>
-                                        </CardContent>
-                                    </StyledCard>
-                                </Zoom>
-                            </Grid>
-                        ))}
-                 
-                </Box>
-            </Container>
-        </Box>
-    );
-};
-
-export default PartnersInvestors;
+export default PartnersInvestors
