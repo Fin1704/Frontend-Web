@@ -1,108 +1,76 @@
-import React from "react";
-import {
-    Box,
-    Container,
-    Grid,
-    Card,
-    CardContent,
-    CardMedia,
-    styled,
-    Tooltip,
-    Zoom,
-} from "@mui/material";
+import React from 'react'
+import styled from 'styled-components'
 
-const StyledCard = styled(Card)(({ theme }) => ({
-    height: "100%",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
-    transition: "all 0.3s ease-in-out",
-    backgroundColor: "transparent",
-    boxShadow: "none",
-    "&:hover": {
-        transform: "translateY(-10px)",
-    },
-}));
+const partners = [
+	{
+		name: 'Goole',
+		icon: '/assets/partners/google.svg',
+	},
+	{
+		name: 'Facebook',
+		icon: '/assets/partners/facebook.png',
+	},
+	{
+		name: 'Unity',
+		icon: 'assets/partners/unity.svg',
+	},
+	{
+		name: 'Tiktok',
+		icon: 'assets/partners/tiktok.png',
+	},
+	{
+		name: 'Ironsource',
+		icon: 'assets/partners/iron_source.png',
+	},
+	{
+		name: 'AppLovin',
+		icon: 'assets/partners/app_lovin.png',
+	},
+	{
+		name: 'AppFlyer',
+		icon: 'assets/partners/app_flyer.png',
+	},
+	{
+		name: 'Sensor Tower',
+		icon: 'assets/partners/sensor_tower.png',
+	},
+]
 
-const CompanyIcon = styled(CardMedia)({
-    width: "60px",
-    height: "60px",
-    margin: "0.25rem auto",
-    borderRadius: "50%",
-    border: "2px solid #1976d2",
-    padding: "2px",
-    backgroundSize: "cover",
-    transition: "transform 0.3s ease",
-    "&:hover": {
-        transform: "scale(1.1)",
-    },
-});
+const PartnersContainer = styled.div`
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	align-items: center;
+	justify-items: center;
+	padding: 16px;
+`
 
 const PartnersInvestors = () => {
-    const partners = [
-        {
-            name: "Tech Solutions Inc",
-            icon: "images.unsplash.com/photo-1516321497487-e288fb19713f",
-        },
-        {
-            name: "Global Innovations",
-            icon: "images.unsplash.com/photo-1454165804606-c3d57bc86b40",
-        },
-        {
-            name: "Future Systems",
-            icon: "images.unsplash.com/photo-1460925895917-afdab827c52f",
-        },
-    ];
+	return (
+		<div className='p-10'>
+			<div className='px-8 pb-8 mx-auto text-3xl font-bold text-center text-white border-b-4 w-fit'>
+				Đối tác của chúng tôi
+			</div>
 
-    return (
-        <Box
-            component="footer"
-            sx={{
-               position:"fixed",
-                width: "100vw",
-                bottom:"0"
-                
-            }}
-        >
-            <Container maxWidth="lg">
-                <Box sx={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                }}>
-                   
-                        {partners.map((partner) => (
-                            <Grid
-                                item
-                               
-                                key={partner.name}
+			<PartnersContainer className='animate__bounceIn animate_fadeIn'>
+				{partners.map((partner) => (
+					<div
+						key={partner.name}
+						style={{ width: '100px', height: '100px' }}>
+						<img
+							src={partner.icon}
+							alt={partner.name}
+							style={{
+								width: '100%',
+								height: '100%',
+								objectFit: 'contain',
+							}}
+						/>
+					</div>
+				))}
+			</PartnersContainer>
+		</div>
+	)
+}
 
-                            >
-                                <Zoom in={true} style={{ transitionDelay: "200ms" }}>
-                                    <StyledCard>
-                                        <CardContent sx={{ textAlign: "center", p: 0.5 }}>
-                                            <Tooltip title="Partner" arrow placement="top">
-                                                <CompanyIcon
-                                                    component="img"
-                                                    image={`https://${partner.icon}`}
-                                                    alt={`${partner.name} icon`}
-                                                    onError={(e) => {
-                                                        e.target.src =
-                                                            "https://images.unsplash.com/photo-1557426272-fc759fdf7a8d";
-                                                    }}
-                                                />
-                                            </Tooltip>
-                                        </CardContent>
-                                    </StyledCard>
-                                </Zoom>
-                            </Grid>
-                        ))}
-                 
-                </Box>
-            </Container>
-        </Box>
-    );
-};
-
-export default PartnersInvestors;
+export default PartnersInvestors
