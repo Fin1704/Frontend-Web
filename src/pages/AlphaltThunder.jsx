@@ -109,6 +109,7 @@ Rev your engines and get ready to dominate the tracks in Alphalt Thunder—where
 			return () => clearInterval(intervalId)
 		}
 	}, [])
+
 	return (
 		<Box
 			sx={{
