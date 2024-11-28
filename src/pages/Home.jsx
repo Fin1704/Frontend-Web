@@ -1,10 +1,8 @@
-import { Box, Button, keyframes } from '@mui/material'
-import * as React from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Box, keyframes } from '@mui/material'
+import 'animate.css'
+import { Link } from 'react-router-dom'
 
 import Galaxy from '../assets/vortex4.png'
-
-import 'animate.css'
 import PartnersInvestors from '../components/PartnersInvestors'
 
 const rotate3dAnimation = keyframes`
@@ -17,11 +15,9 @@ const rotate3dAnimation = keyframes`
 `
 
 function Home() {
-	const navigate = useNavigate()
-
 	return (
 		<>
-			<div className='relative h-screen overflow-hidden'>
+			<div className='relative h-[calc(100vh-64px)] overflow-hidden'>
 				<div
 					className='absolute bottom-0 right-0'
 					style={{
@@ -64,29 +60,11 @@ function Home() {
 						boundaries of gaming innovation!
 					</div>
 
-					<Button
-						className='animate__bounceIn animate__fadeInLeft'
-						sx={{
-							lineHeight: 1,
-							background:
-								'linear-gradient(93.94deg, #E699F9 4.51%, #8DDBF1 93.95%)',
-							color: 'black',
-							fontWeight: 550,
-							// fontWeight: 'bold',
-							padding: '16px 32px',
-							borderRadius: '8px',
-							textTransform: 'none',
-							'&:hover': {
-								background:
-									'linear-gradient(93.94deg, #E699F9 4.51%, #8DDBF1 93.95%)', // Maintain gradient on hover
-								opacity: 0.8,
-							},
-						}}
-						onClick={() => {
-							navigate('/gallery')
-						}}>
+					<Link
+						to='/gallery'
+						className='inline-block px-5 py-3 transition rounded-full hover:opacity-80 primary-bg animate__bounceIn animate__fadeInLeft'>
 						Explore games
-					</Button>
+					</Link>
 				</div>
 			</div>
 

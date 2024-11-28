@@ -84,7 +84,7 @@ const ActiveLink = styled(Link)`
 
 function DrawerAppBar(props) {
 	return (
-		<div className='fixed inset-x-0 top-0 flex items-center justify-between h-16 px-10 bg-[rgba(0,0,0,.7)] animate__fadeInDown animate__bounceIn z-20'>
+		<div className='sticky top-0 left-0 z-20 flex items-center justify-between w-full h-16 px-10 bg-black animate__fadeInDown animate__bounceIn'>
 			<Link to='/' className='text-xl font-bold text-white'>
 				S.GAMES
 			</Link>
@@ -101,7 +101,7 @@ function DrawerAppBar(props) {
 						<div className='absolute bottom-0 left-0 w-0 h-1 transition-all bg-gradient-to-r from-purple-500 to-pink-500'></div>
 
 						{page.subMenu && (
-							<div className='absolute py-2 transition bg-[rgba(0,0,0,.7)] shadow-xl left-1/2 top-full rounded-2xl space-y-2 min-w-40 sub-menu invisible opacity-0'>
+							<div className='absolute invisible py-2 space-y-2 transition bg-black shadow-xl opacity-0 left-1/2 top-full rounded-2xl min-w-40 sub-menu'>
 								{page.subMenu.map((subMenuItem, i) => (
 									<ActiveLink
 										to={subMenuItem.href}
