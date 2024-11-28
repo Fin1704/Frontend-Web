@@ -2,27 +2,30 @@ import { Box } from '@mui/material'
 import 'animate.css'
 import React from 'react'
 
-import Bg from '../assets/bg.jpg'
-import '../assets/stars-anim.css'
+import Footer from '../components/Footer'
+import Navbar from '../components/Navbar'
 
-const Background = ({ children }) => {
+const DefaultLayout = ({ children }) => {
 	return (
 		<>
+			<Navbar />
+
+			{/* Default background and stars animation */}
 			<div
 				className='fixed inset-0 bg-center bg-repeat-y -z-20'
 				style={{
-					backgroundImage: `url(${Bg})`,
+					backgroundImage: "url('/assets/bg.jpg')",
 				}}>
-				{/* Stars or other animations */}
 				<Box className='stars1' />
 				<Box className='stars2' />
 				<Box className='stars3' />
-				{/* Render children */}
 			</div>
 
 			{children}
+
+			<Footer />
 		</>
 	)
 }
 
-export default Background
+export default DefaultLayout

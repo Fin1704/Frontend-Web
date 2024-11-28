@@ -1,9 +1,6 @@
-import * as React from 'react'
 import { FaChevronDown } from 'react-icons/fa6'
 import { Link } from 'react-router-dom'
-
 import styled from 'styled-components'
-import '../assets/navbar.css'
 
 const pages = [
 	{
@@ -82,7 +79,7 @@ const ActiveLink = styled(Link)`
 	}
 `
 
-function DrawerAppBar(props) {
+function Navbar(props) {
 	return (
 		<div className='sticky top-0 left-0 z-20 flex items-center justify-between w-full h-16 px-10 bg-black animate__fadeInDown animate__bounceIn'>
 			<Link to='/' className='text-xl font-bold text-white'>
@@ -121,4 +118,4 @@ function DrawerAppBar(props) {
 	)
 }
 
-export default DrawerAppBar
+export default Navbar

@@ -1,8 +1,9 @@
 import { memo } from 'react'
+import { Link } from 'react-router-dom'
 
 const GalleryCard = (props) => {
 	return (
-		<div className='shadow-xl bg-[#090b2e] rounded-2xl p-10 flex gap-5 max-w-5xl animate__bounceIn animate__faceIn'>
+		<div className='shadow-xl bg-[#090b2e] rounded-2xl p-10 flex gap-5 max-w-5xl animate__bounceIn animate__faceIn transition hover:-translate-y-2 cursor-pointer'>
 			<div className='flex-1 space-y-5 text-white'>
 				<div className='flex items-center gap-5'>
 					<div
@@ -24,9 +25,9 @@ const GalleryCard = (props) => {
 
 				<div className='text-semibold'>{props.description}</div>
 
-				<button className='block px-5 py-3 font-semibold text-white transition rounded-full primary-bg hover:opacity-80'>
+				<Link to={`/games/${props.slug}`} className='btn btn-primary'>
 					Learn more
-				</button>
+				</Link>
 			</div>
 
 			<div

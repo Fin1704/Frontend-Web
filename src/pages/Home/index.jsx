@@ -1,9 +1,9 @@
-import { Box, keyframes } from '@mui/material'
 import 'animate.css'
+
+import { Box, keyframes } from '@mui/material'
 import { Link } from 'react-router-dom'
 
-import Galaxy from '../assets/vortex4.png'
-import PartnersInvestors from '../components/PartnersInvestors'
+import PartnersInvestors from './PartnersInvestors'
 
 const rotate3dAnimation = keyframes`
   from {
@@ -26,7 +26,7 @@ function Home() {
 					}}>
 					<Box
 						component='img'
-						src={Galaxy}
+						src='/assets/vortex4.png'
 						alt='Rotating Galaxy'
 						sx={{
 							animation: `${rotate3dAnimation} 20s linear infinite`,
@@ -61,7 +61,7 @@ function Home() {
 					</div>
 
 					<Link
-						to='/gallery'
+						to='/games'
 						className='inline-block px-5 py-3 transition rounded-full hover:opacity-80 primary-bg animate__bounceIn animate__fadeInLeft'>
 						Explore games
 					</Link>

@@ -1,30 +1,25 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
-import Background from './components/Background'
-import DrawerAppBar from './components/Navbar'
+import DefaultLayout from './layouts/Default'
 import AphaltThunder from './pages/AlphaltThunder'
-import Contact from './pages/Contact'
-import GameGallery from './pages/Gallery'
+import Contact from './pages/Contacts'
+import GameDetail from './pages/GameDetail'
+import Games from './pages/Games'
 import Home from './pages/Home'
 
 function App() {
 	return (
-		<Background>
-			<BrowserRouter>
-				<DrawerAppBar />
+		<BrowserRouter>
+			<DefaultLayout>
 				<Routes>
-					<Route path='/'>
-						<Route index element={<Home />} />
-						<Route path='contact' element={<Contact />} />
-						<Route path='gallery' element={<GameGallery />} />
-						<Route
-							path='alphalt-thunder'
-							element={<AphaltThunder />}
-						/>
-					</Route>
+					<Route index element={<Home />} />
+					<Route path='contact' element={<Contact />} />
+					<Route path='games' element={<Games />}></Route>
+					<Route path='games/:slug' element={<GameDetail />} />
+					<Route path='alphalt-thunder' element={<AphaltThunder />} />
 				</Routes>
-			</BrowserRouter>
-		</Background>
+			</DefaultLayout>
+		</BrowserRouter>
 	)
 }
 
