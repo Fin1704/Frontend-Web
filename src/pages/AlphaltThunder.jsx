@@ -24,25 +24,13 @@ import {
 	FaShare,
 } from 'react-icons/fa'
 import { useNavigate } from 'react-router-dom'
-import Footer from '../layouts/components/Footer'
 
-const StyledCard = styled(Card)(({ theme }) => ({
-	backgroundColor: '#060824',
-	color: '#e0e0e0',
-	height: '100%',
-	display: 'flex',
-	flexDirection: 'column',
-	transition: 'transform 0.2s',
-	'&:hover': {
-		transform: 'scale(1.02)',
-	},
-}))
 
 const SteamButton = styled(Button)(({ theme }) => ({
-	backgroundColor: '#3f51b5',
-	color: '#fff',
+
+
 	'&:hover': {
-		backgroundColor: '#283593',
+
 	},
 }))
 
@@ -72,7 +60,7 @@ Choose from two exciting race modes:
 Rev your engines and get ready to dominate the tracks in Alphalt Thunder—where speed meets innovation!
     `,
 		screenshots: [
-			'/assets/Video.mp4',
+			'/assets/video.mp4',
 			'/assets/1.jpg',
 			'/assets/2.jpg',
 			'/assets/3.jpg',
@@ -111,17 +99,7 @@ Rev your engines and get ready to dominate the tracks in Alphalt Thunder—where
 	}, [])
 
 	return (
-		<Box
-			sx={{
-				backgroundColor: '#060824',
-				width: '100%',
-				height: '90vh',
-				overflowY: 'auto',
-				scrollbarWidth: 'none',
-				'&::-webkit-scrollbar': {
-					display: 'none',
-				},
-			}}>
+		<div className='h-100 flex gap-5 p-10 overflow-hidden'>
 			<Container maxWidth='lg'>
 				<Grid container spacing={4}>
 					{/* <Grid item xs={12} md={8}>
@@ -301,11 +279,11 @@ Rev your engines and get ready to dominate the tracks in Alphalt Thunder—where
 					</Grid>
 
 					<Grid item xs={12} md={4}>
-						<Paper
+						<Box
 							sx={{
 								p: 2,
-								backgroundColor: '#0a0e35',
-								color: '#e0e0e0',
+
+								color: 'white',
 							}}>
 							<Typography
 								variant='h4'
@@ -358,13 +336,21 @@ Rev your engines and get ready to dominate the tracks in Alphalt Thunder—where
 									/>
 								</Box>
 							</Box>
-						</Paper>
+						</Box>
 					</Grid>
 				</Grid>
 
 				<Grid container spacing={4} sx={{ mt: 2 }}>
 					<Grid item xs={12} md={8}>
-						<StyledCard>
+						<Box sx={{
+							height: '100%',
+							display: 'flex',
+							flexDirection: 'column',
+							transition: 'transform 0.2s',
+							'&:hover': {
+								transform: 'scale(1.02)',
+							},
+						}}>
 							<CardContent>
 								<Typography
 									variant='h5'
@@ -378,11 +364,11 @@ Rev your engines and get ready to dominate the tracks in Alphalt Thunder—where
 
 								<Typography
 									variant='body1'
-									sx={{ whiteSpace: 'pre-line' }}>
+									sx={{ whiteSpace: 'pre-line', color: 'white', }}>
 									{gameData.description}
 								</Typography>
 							</CardContent>
-						</StyledCard>
+						</Box>
 					</Grid>
 				</Grid>
 				<Snackbar
@@ -399,8 +385,8 @@ Rev your engines and get ready to dominate the tracks in Alphalt Thunder—where
 					</Alert>
 				</Snackbar>
 			</Container>
-			<Footer></Footer>
-		</Box>
+			
+		</div>
 	)
 }
 

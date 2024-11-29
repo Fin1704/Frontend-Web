@@ -34,12 +34,12 @@ function Home() {
 					/>
 				</div>
 
-				<div className='absolute bottom-0 left-0 max-w-3xl p-10 space-y-10 text-white'>
-					<div className='font-bold text-white text-7xl animate__bounceIn animate__fadeInLeft'>
+				<div className='absolute bottom-0 left-0 max-w-3xl p-10 space-y-3 text-white pb-20'>
+					<div className='font-bold text-white text-7xl animate__bounceIn animate__fadeInLeft text-xl'>
 						At S.GAME.S Studio
 					</div>
 
-					<div className='animate__bounceIn animate__fadeInLeft'>
+					<div className='animate__bounceIn animate__fadeInLeft text-sm'>
 						We revolutionize the gaming experience by bridging
 						traditional gaming with the limitless possibilities of
 						blockchain technology. Our mission is to empower gamers
@@ -51,7 +51,7 @@ function Home() {
 						experience.
 					</div>
 
-					<div className='animate__bounceIn animate__fadeInLeft'>
+					<div className='animate__bounceIn animate__fadeInLeft text-sm'>
 						With over 8 years of expertise in developing Unity-based
 						games for PC and mobile, our studio ensures that players
 						can explore features like NFTs and decentralized

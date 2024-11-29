@@ -15,6 +15,7 @@ import {
 	FaFacebook,
 	FaInstagram,
 	FaLinkedin,
+	FaTelegram,
 	FaTwitter,
 } from 'react-icons/fa'
 
@@ -82,9 +83,9 @@ const Footer = () => {
 
 	const socialLinks = [
 		{ icon: <FaFacebook />, label: 'Facebook', url: '#' },
-		{ icon: <FaTwitter />, label: 'Twitter', url: '#' },
-		{ icon: <FaInstagram />, label: 'Instagram', url: '#' },
-		{ icon: <FaLinkedin />, label: 'LinkedIn', url: '#' },
+		{ icon: <FaTelegram />, label: 'Telegram', url: '#' },
+		// { icon: <FaInstagram />, label: 'Instagram', url: '#' },
+		// { icon: <FaLinkedin />, label: 'LinkedIn', url: '#' },
 	]
 
 	return (

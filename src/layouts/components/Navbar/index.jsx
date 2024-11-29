@@ -4,67 +4,61 @@ import styled from 'styled-components'
 
 const pages = [
 	{
-		href: '#',
-		text: 'Services',
+		href: '/games',
+		text: 'Project',
 		subMenu: [
 			{
-				href: '#',
-				text: 'TEST',
+				href: '/alphalt-thunder',
+				text: 'Alphalt Thunder',
 			},
-			{
-				href: '#',
-				text: 'TEST',
-			},
-			{
-				href: '#',
-				text: 'TEST',
-			},
+		
 		],
 	},
-	{
-		href: '#',
-		text: 'Portfolio',
-		subMenu: [
-			{
-				href: '#',
-				text: 'TEST',
-			},
-			{
-				href: '#',
-				text: 'TEST',
-			},
-			{
-				href: '#',
-				text: 'TEST',
-			},
-		],
-	},
-	{
-		href: '#',
-		text: 'Use cases',
-		subMenu: [
-			{
-				href: '#',
-				text: 'TEST',
-			},
-			{
-				href: '#',
-				text: 'TEST',
-			},
-			{
-				href: '#',
-				text: 'TEST',
-			},
-		],
-	},
-	{
-		href: '#',
-		text: 'About us',
-	},
-	{
-		href: '#',
-		text: 'Contact',
-	},
+	// {
+	// 	href: '#',
+	// 	text: 'Portfolio',
+	// 	subMenu: [
+	// 		{
+	// 			href: '#',
+	// 			text: 'TEST',
+	// 		},
+	// 		{
+	// 			href: '#',
+	// 			text: 'TEST',
+	// 		},
+	// 		{
+	// 			href: '#',
+	// 			text: 'TEST',
+	// 		},
+	// 	],
+	// },
+	// {
+	// 	href: '#',
+	// 	text: 'Use cases',
+	// 	subMenu: [
+	// 		{
+	// 			href: '#',
+	// 			text: 'TEST',
+	// 		},
+	// 		{
+	// 			href: '#',
+	// 			text: 'TEST',
+	// 		},
+	// 		{
+	// 			href: '#',
+	// 			text: 'TEST',
+	// 		},
+	// 	],
+	// },
+	// {
+	// 	href: '#',
+	// 	text: 'About us',
+	// },
+// 	{
+// 		href: '#',
+// 		text: 'Contact',
+// 	},
+// 
 ]
 
 const ActiveLink = styled(Link)`

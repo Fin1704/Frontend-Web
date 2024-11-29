@@ -15,6 +15,7 @@ const DefaultLayout = ({ children }) => {
 				className='fixed inset-0 bg-center bg-repeat-y -z-20'
 				style={{
 					backgroundImage: "url('/assets/bg.jpg')",
+					backgroundSize: "cover",
 				}}>
 				<Box className='stars1' />
 				<Box className='stars2' />

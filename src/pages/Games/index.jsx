@@ -39,27 +39,14 @@ const Games = () => {
 				ref={games}
 				className='flex flex-col items-center justify-center gap-10'>
 				<GalleryCard
-					logoURL='https://galaxy4games.com/wp-content/uploads/2022/08/image_2022-08-24_00-50-47.png'
-					name='Skiesverse'
-					category='MINE, CRAFT, LAUNCH BUSINESS, AND FIGHT FOR THE DESERT'
-					description='The story begins in the distant future on Earth. The planet has survived a catastrophe. The well-known world has been destroyed, and remnants of civilization are hiding in technological shelters to save human experience and heritage for the future generations. This is the new world that shelter citizens have been trying to create. Hundreds of years ago they left their underground homes.'
-					thumbnailURL='https://galaxy4games.com/wp-content/uploads/2023/02/battle_back_small.png'
-					slug='123'
+					logoURL='/assets/logogame.png'
+					name='Alphalt Thunder'
+					category='RACE'
+					description=' Welcome to Alphalt Thunder, the ultimate car racing experience that combines cutting-edge realism with the power of blockchain technology! Dive into the most thrilling car driving simulator where every race is packed with high-octane action and competitive excitement. Compete with rivals, challenge your friends, and place on-chain bets to elevate the fun.'
+					thumbnailURL='/assets/1.jpg'
+					slug='../alphalt-thunder'
 				/>
-				<GalleryCard
-					logoURL='https://galaxy4games.com/wp-content/uploads/2022/08/image_2022-08-24_00-50-47.png'
-					name='Skiesverse'
-					category='MINE, CRAFT, LAUNCH BUSINESS, AND FIGHT FOR THE DESERT'
-					description='The story begins in the distant future on Earth. The planet has survived a catastrophe. The well-known world has been destroyed, and remnants of civilization are hiding in technological shelters to save human experience and heritage for the future generations. This is the new world that shelter citizens have been trying to create. Hundreds of years ago they left their underground homes.'
-					thumbnailURL='https://galaxy4games.com/wp-content/uploads/2023/02/battle_back_small.png'
-				/>
-				<GalleryCard
-					logoURL='https://galaxy4games.com/wp-content/uploads/2022/08/image_2022-08-24_00-50-47.png'
-					name='Skiesverse'
-					category='MINE, CRAFT, LAUNCH BUSINESS, AND FIGHT FOR THE DESERT'
-					description='The story begins in the distant future on Earth. The planet has survived a catastrophe. The well-known world has been destroyed, and remnants of civilization are hiding in technological shelters to save human experience and heritage for the future generations. This is the new world that shelter citizens have been trying to create. Hundreds of years ago they left their underground homes.'
-					thumbnailURL='https://galaxy4games.com/wp-content/uploads/2023/02/battle_back_small.png'
-				/>
+				
 			</div>
 		</div>
 	)
