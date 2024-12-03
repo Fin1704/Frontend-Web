@@ -16,7 +16,7 @@ const GameDetail = () => {
 							}}></div>
 
 						<div className='space-y-10'>
-							<div className='text-3xl font-bold text-white'>
+							<div className='text-3xl font-bold '>
 								Skiesverse
 							</div>
 
@@ -29,7 +29,7 @@ const GameDetail = () => {
 						</div>
 					</div>
 
-					<div className='text-white'>
+					<div className=''>
 						The story begins in the distant future on Earth. The
 						planet has survived a catastrophe. The well-known world
 						has been destroyed, and remnants of civilization are

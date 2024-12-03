@@ -58,7 +58,7 @@ const pages = [
 		],
 	},
 	{
-		href: '#',
+		href: '/about-us',
 		text: 'About us',
 	},
 	{
@@ -82,11 +82,11 @@ const ActiveLink = styled(Link)`
 function Navbar(props) {
 	return (
 		<div className='sticky top-0 left-0 z-20 flex items-center justify-between w-full h-16 px-10 bg-black animate__fadeInDown animate__bounceIn'>
-			<Link to='/' className='text-xl font-bold text-white'>
+			<Link to='/' className='text-xl font-bold '>
 				S.GAMES
 			</Link>
 
-			<div className='flex h-full gap-10 font-semibold text-white'>
+			<div className='flex h-full gap-10 font-semibold '>
 				{pages.map((page, i) => (
 					<ActiveLink
 						to={page.href}

@@ -1,7 +1,7 @@
 import { useRef } from 'react'
-import { FaAngleDoubleDown } from 'react-icons/fa'
 
 import GalleryCard from '../../components/GalleryCard'
+import Intro from '../../components/Intro'
 
 const Games = () => {
 	const games = useRef()
@@ -9,31 +9,17 @@ const Games = () => {
 	const handleScrollToGames = () => games.current.scrollIntoView()
 
 	return (
-		<div className='p-10'>
-			<div className='h-[calc(100vh-64px)] flex justify-center items-center'>
-				<div className='flex flex-col items-center justify-center max-w-xl gap-10 animate__bounceIn'>
-					<div className='text-3xl font-bold text-white'>
-						Our Games / Projects
-					</div>
-
-					<div className='w-1/3 h-1 mx-auto rounded-full primary-bg'></div>
-
-					<div className='font-medium text-white'>
-						As a product company, we develop our products from
+		<div className='pb-10'>
+			<Intro
+				title='Our Games / Projects'
+				description='As a product company, we develop our products from
 						scratch to market launch. To do this, we use our modular
 						system and improve it constantly. Here is the list of
 						our internal casual and web3 products created by the
-						Galaxy4games team.
-					</div>
-
-					<button
-						onClick={handleScrollToGames}
-						className='btn btn-primary animate-bounce'>
-						Get Started
-						<FaAngleDoubleDown />
-					</button>
-				</div>
-			</div>
+						Galaxy4games team.'
+				btnContent='Get Started'
+				onClick={handleScrollToGames}
+			/>
 
 			<div
 				ref={games}

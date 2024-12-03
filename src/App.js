@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 import DefaultLayout from './layouts/Default'
+import AboutUs from './pages/AboutUs'
 import AphaltThunder from './pages/AlphaltThunder'
 import Contact from './pages/Contacts'
 import GameDetail from './pages/GameDetail'
@@ -14,9 +15,10 @@ function App() {
 				<Routes>
 					<Route index element={<Home />} />
 					<Route path='contact' element={<Contact />} />
-					<Route path='games' element={<Games />}></Route>
+					<Route path='games' element={<Games />} />
 					<Route path='games/:slug' element={<GameDetail />} />
 					<Route path='alphalt-thunder' element={<AphaltThunder />} />
+					<Route path='about-us' element={<AboutUs />} />
 				</Routes>
 			</DefaultLayout>
 		</BrowserRouter>
