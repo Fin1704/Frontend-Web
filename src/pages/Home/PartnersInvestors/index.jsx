@@ -2,37 +2,22 @@ import React from 'react'
 import styled from 'styled-components'
 
 const partners = [
-	{
-		name: 'Goole',
-		icon: '/assets/partners/google.svg',
-	},
-	{
-		name: 'Facebook',
-		icon: '/assets/partners/facebook.png',
-	},
+	
 	{
 		name: 'Unity',
-		icon: 'assets/partners/unity.svg',
+		icon: 'assets/partners/unity.png',
 	},
 	{
-		name: 'Tiktok',
-		icon: 'assets/partners/tiktok.png',
+		name: 'thirdweb',
+		icon: 'assets/partners/thirdweb.png',
 	},
 	{
-		name: 'Ironsource',
-		icon: 'assets/partners/iron_source.png',
+		name: ' Itch.io',
+		icon: 'assets/partners/itch.svg',
 	},
 	{
-		name: 'AppLovin',
-		icon: 'assets/partners/app_lovin.png',
-	},
-	{
-		name: 'AppFlyer',
-		icon: 'assets/partners/app_flyer.png',
-	},
-	{
-		name: 'Sensor Tower',
-		icon: 'assets/partners/sensor_tower.png',
+		name: 'vnbnode',
+		icon: 'assets/partners/vnbnode.png',
 	},
 ]
 
@@ -47,7 +32,7 @@ const PartnersContainer = styled.div`
 
 const PartnersInvestors = () => {
 	return (
-		<div className='p-10'>
+		<div className='p-0'>
 			<div className='relative py-10 text-4xl font-bold text-center '>
 				Partners and Investors
 			</div>

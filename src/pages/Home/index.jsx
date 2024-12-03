@@ -36,7 +36,7 @@ function Home() {
 
 				<div className='absolute bottom-0 left-0 max-w-3xl p-10 space-y-3 text-white pb-20'>
 					<div className='font-bold text-white text-7xl animate__bounceIn animate__fadeInLeft text-xl'>
-						At S.GAME.S Studio
+						At S.GAMES Studio
 					</div>
 
 					<div className='animate__bounceIn animate__fadeInLeft text-sm'>
@@ -63,7 +63,7 @@ function Home() {
 					<Link
 						to='/games'
 						className='inline-block px-5 py-3 transition rounded-full hover:opacity-80 primary-bg animate__bounceIn animate__fadeInLeft'>
-						Explore games
+						Explore Games
 					</Link>
 				</div>
 			</div>

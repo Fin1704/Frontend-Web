@@ -50,10 +50,10 @@ const pages = [
 	// 		},
 	// 	],
 	// },
-	// {
-	// 	href: '#',
-	// 	text: 'About us',
-	// },
+	{
+		href: '/about-us',
+		text: 'About us',
+	},
 // 	{
 // 		href: '#',
 // 		text: 'Contact',
@@ -77,7 +77,7 @@ function Navbar(props) {
 	return (
 		<div className='sticky top-0 left-0 z-20 flex items-center justify-between w-full h-16 px-10 bg-black animate__fadeInDown animate__bounceIn'>
 			<Link to='/' className='text-xl font-bold text-white'>
-				S.GAMES
+				<img src='/assets/logo_S_game1.png' width={"20%"}/>
 			</Link>
 
 			<div className='flex h-full gap-10 font-semibold text-white'>
