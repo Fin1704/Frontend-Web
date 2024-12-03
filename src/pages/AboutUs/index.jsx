@@ -88,7 +88,7 @@ const AboutUs = () => {
 					<div className='flex-1 space-y-5'>
 						<div className='heading'>Our company</div>
 
-						<div className='primary-bar'></div>
+						<div className='line'></div>
 
 						<div>
 							Galaxy4Games is a game solution provider. Our main
@@ -129,7 +129,7 @@ const AboutUs = () => {
 			<div className='flex items-center justify-center'>
 				<div className='flex flex-col items-center justify-center max-w-5xl gap-10'>
 					<div className='heading'>Technologies</div>
-					<div className='primary-bar'></div>
+					<div className='line'></div>
 					<div className='grid grid-cols-4 gap-5'>
 						{technologies.map((tech) => (
 							<div key={tech.url} className='space-y-3 card'>
@@ -155,7 +155,7 @@ const AboutUs = () => {
 			<div className='flex items-center justify-center bg-dark'>
 				<div className='max-w-3xl py-10 space-y-10'>
 					<div className='text-center heading'>Why us</div>
-					<div className='mx-auto primary-bar'></div>
+					<div className='mx-auto line'></div>
 
 					{whyUs.map((r, i) => (
 						<div key={i} className='flex items-center gap-5 card'>

@@ -1,11 +1,74 @@
+import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 
+import Slider from '../../components/Slider'
+
+const images = [
+	{
+		id: 1,
+		url: 'https://galaxy4games.com/wp-content/uploads/2023/03/photo_2023-05-02-12.22.07.jpeg',
+	},
+	{
+		id: 2,
+		url: 'https://galaxy4games.com/wp-content/uploads/2023/03/skiesverse20.png',
+	},
+	{
+		id: 3,
+		url: 'https://galaxy4games.com/wp-content/uploads/2023/03/skiesverse19.png',
+	},
+	{
+		id: 4,
+		url: 'https://galaxy4games.com/wp-content/uploads/2023/03/skiesverse17.png',
+	},
+	{
+		id: 5,
+		url: 'https://galaxy4games.com/wp-content/uploads/2023/03/skiesverse14.png',
+	},
+	{
+		id: 6,
+		url: 'https://galaxy4games.com/wp-content/uploads/2023/03/skiesverse12.png',
+	},
+	{
+		id: 7,
+		url: 'https://galaxy4games.com/wp-content/uploads/2023/03/skiesverse4.png',
+	},
+	{
+		id: 8,
+		url: 'https://galaxy4games.com/wp-content/uploads/2023/03/skiesverse5.png',
+	},
+]
+
+const results = [
+	{
+		prefix: '12 months',
+		title: 'Development Alpha',
+		content:
+			'In 12 month Alpha version of Web3 RPG game is availible to play',
+	},
+	{
+		prefix: '4 months',
+		title: 'Mobile Platforms',
+		content:
+			'The game is availible and playable on mobile platforms due to optimization approach after 4 months from alpha launch',
+	},
+	{
+		prefix: '10+',
+		title: 'Partnerships',
+		content:
+			"Since Alpha we've got 10+ partnerships with top blockchain ecosystems, platforms and marketplaces",
+	},
+]
+
 const GameDetail = () => {
-	const params = useParams()
+	const { slug } = useParams()
+	const [loading, setLoading] = useState(true)
+	const [game, setGame] = useState(true)
+
+	useEffect(() => {}, [slug])
 
 	return (
-		<>
-			<div className='h-[calc(100vh-64px)] flex gap-5 p-10 overflow-hidden'>
+		<div className='py-10 space-y-10'>
+			<div className='h-[calc(100vh-64px)] flex gap-5 container overflow-hidden'>
 				<div className='flex-1 space-y-10'>
 					<div className='flex items-center gap-10'>
 						<div
@@ -15,7 +78,7 @@ const GameDetail = () => {
 									'url("https://galaxy4games.com/wp-content/uploads/2022/08/image_2022-08-24_00-50-47.png")',
 							}}></div>
 
-						<div className='space-y-10'>
+						<div className='space-y-5'>
 							<div className='text-3xl font-bold '>
 								Skiesverse
 							</div>
@@ -54,7 +117,56 @@ const GameDetail = () => {
 					</div>
 				</div>
 			</div>
-		</>
+
+			<div className='container mx-auto'>
+				<Slider images={images} />
+			</div>
+
+			<div className='flex items-center justify-center bg-dark'>
+				<div className='container py-10 space-y-10'>
+					<div className='text-center heading'>About Project</div>
+					<div className='mx-auto line'></div>
+
+					<iframe
+						className='w-full min-h-80'
+						src='https://www.youtube.com/embed/7KwzVZNpzmU'
+						title='Skiesverse_intro'
+						frameborder='0'
+						allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+						referrerpolicy='strict-origin-when-cross-origin'
+						allowfullscreen></iframe>
+
+					<div>
+						Web3 Post-apocalyptic tactical RPG with user-driven
+						economy and tokenomy. Mine, craft, launch a business,
+						and fight for the desert.
+					</div>
+				</div>
+			</div>
+
+			<div className='container flex flex-col items-center justify-center gap-10'>
+				<div className='heading'>Our results</div>
+
+				<div className='line'></div>
+
+				<div className='grid grid-cols-3 gap-10'>
+					{results.map((result) => (
+						<div key={result.prefix} className='space-y-5 card'>
+							<div className='text-transparent uppercase headline bg-clip-text primary-bg'>
+								{result.prefix}
+							</div>
+
+							<div className='line'></div>
+
+							<div className='heading'>{result.title}</div>
+							<div>{result.content}</div>
+						</div>
+					))}
+				</div>
+
+				<button className='btn btn-primary'>More</button>
+			</div>
+		</div>
 	)
 }
 

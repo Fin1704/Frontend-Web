@@ -2,10 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+.container {
+	margin: 0 auto;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+	display: none;
+}
+
+.no-scrollbar {
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+
 @layer base {
 	html {
 		scroll-behavior: smooth;
 		color: #fff;
+	}
+}
+
+@media (min-width: 1280px) {
+	.container {
+		max-width: 1024px;
 	}
 }
 
@@ -22,7 +41,7 @@
 		@apply font-semibold text-center primary-bg;
 	}
 
-	.primary-bar {
+	.line {
 		@apply w-1/4 h-1 rounded-full primary-bg;
 	}
 
