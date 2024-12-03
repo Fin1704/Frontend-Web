@@ -48,7 +48,7 @@ const PartnersContainer = styled.div`
 const PartnersInvestors = () => {
 	return (
 		<div className='p-10'>
-			<div className='relative py-10 text-4xl font-bold text-center text-white'>
+			<div className='relative py-10 text-4xl font-bold text-center '>
 				Partners and Investors
 			</div>
 
