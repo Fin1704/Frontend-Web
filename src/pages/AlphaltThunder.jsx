@@ -24,7 +24,7 @@ import {
 	FaShare,
 } from 'react-icons/fa'
 import { useNavigate } from 'react-router-dom'
-import Footer from '../components/Footer'
+import Footer from '../layouts/components/Footer'
 
 const StyledCard = styled(Card)(({ theme }) => ({
 	backgroundColor: '#060824',

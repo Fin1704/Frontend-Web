@@ -47,9 +47,9 @@ const PartnersContainer = styled.div`
 
 const PartnersInvestors = () => {
 	return (
-		<div className='p-10'>
-			<div className='px-8 pb-8 mx-auto text-3xl font-bold text-center text-white border-b-4 w-fit'>
-				Đối tác của chúng tôi
+		<div className='container'>
+			<div className='relative py-10 text-center heading'>
+				Partners and Investors
 			</div>
 
 			<PartnersContainer className='animate__bounceIn animate_fadeIn'>

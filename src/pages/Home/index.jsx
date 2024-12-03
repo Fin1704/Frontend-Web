@@ -1,11 +1,9 @@
-import { Box, Button, keyframes } from '@mui/material'
-import * as React from 'react'
-import { useNavigate } from 'react-router-dom'
-
-import Galaxy from '../assets/vortex4.png'
-
 import 'animate.css'
-import PartnersInvestors from '../components/PartnersInvestors'
+
+import { Box, keyframes } from '@mui/material'
+import { Link } from 'react-router-dom'
+
+import PartnersInvestors from './PartnersInvestors'
 
 const rotate3dAnimation = keyframes`
   from {
@@ -17,11 +15,9 @@ const rotate3dAnimation = keyframes`
 `
 
 function Home() {
-	const navigate = useNavigate()
-
 	return (
 		<>
-			<div className='relative h-screen overflow-hidden'>
+			<div className='relative h-[calc(100vh-64px)] overflow-hidden'>
 				<div
 					className='absolute bottom-0 right-0'
 					style={{
@@ -30,7 +26,7 @@ function Home() {
 					}}>
 					<Box
 						component='img'
-						src={Galaxy}
+						src='/assets/vortex4.png'
 						alt='Rotating Galaxy'
 						sx={{
 							animation: `${rotate3dAnimation} 20s linear infinite`,
@@ -38,8 +34,8 @@ function Home() {
 					/>
 				</div>
 
-				<div className='absolute bottom-0 left-0 max-w-3xl p-10 space-y-10 text-white'>
-					<div className='font-bold text-white text-7xl animate__bounceIn animate__fadeInLeft'>
+				<div className='absolute left-0 max-w-3xl p-10 space-y-10 -translate-y-1/2 top-1/2'>
+					<div className='font-bold text-7xl animate__bounceIn animate__fadeInLeft'>
 						At S.GAME.S Studio
 					</div>
 
@@ -64,29 +60,11 @@ function Home() {
 						boundaries of gaming innovation!
 					</div>
 
-					<Button
-						className='animate__bounceIn animate__fadeInLeft'
-						sx={{
-							lineHeight: 1,
-							background:
-								'linear-gradient(93.94deg, #E699F9 4.51%, #8DDBF1 93.95%)',
-							color: 'black',
-							fontWeight: 550,
-							// fontWeight: 'bold',
-							padding: '16px 32px',
-							borderRadius: '8px',
-							textTransform: 'none',
-							'&:hover': {
-								background:
-									'linear-gradient(93.94deg, #E699F9 4.51%, #8DDBF1 93.95%)', // Maintain gradient on hover
-								opacity: 0.8,
-							},
-						}}
-						onClick={() => {
-							navigate('/gallery')
-						}}>
+					<Link
+						to='/games'
+						className='inline-block px-5 py-3 transition rounded-full hover:opacity-80 primary-bg animate__bounceIn animate__fadeInLeft'>
 						Explore games
-					</Button>
+					</Link>
 				</div>
 			</div>
 
