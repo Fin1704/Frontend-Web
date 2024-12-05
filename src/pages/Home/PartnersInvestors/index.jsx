@@ -1,6 +1,3 @@
-import React from 'react'
-import styled from 'styled-components'
-
 const partners = [
 	{
 		name: 'Goole',
@@ -36,15 +33,6 @@ const partners = [
 	},
 ]
 
-const PartnersContainer = styled.div`
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: repeat(2, 1fr);
-	align-items: center;
-	justify-items: center;
-	padding: 16px;
-`
-
 const PartnersInvestors = () => {
 	return (
 		<div className='container'>
@@ -52,7 +40,7 @@ const PartnersInvestors = () => {
 				Partners and Investors
 			</div>
 
-			<PartnersContainer className='animate__bounceIn animate_fadeIn'>
+			<div className='grid items-center justify-center grid-cols-2 gap-4 justify-items-center md:grid-cols-3 lg:grid-cols-4 animate__bounceIn animate_fadeIn'>
 				{partners.map((partner) => (
 					<div
 						key={partner.name}
@@ -68,7 +56,7 @@ const PartnersInvestors = () => {
 						/>
 					</div>
 				))}
-			</PartnersContainer>
+			</div>
 		</div>
 	)
 }

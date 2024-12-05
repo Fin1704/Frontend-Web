@@ -35,7 +35,7 @@ function Home() {
 				</div>
 
 				<div className='absolute left-0 max-w-3xl p-10 space-y-10 -translate-y-1/2 top-1/2'>
-					<div className='font-bold text-7xl animate__bounceIn animate__fadeInLeft'>
+					<div className='headline animate__bounceIn animate__fadeInLeft'>
 						At S.GAME.S Studio
 					</div>
 
@@ -62,7 +62,7 @@ function Home() {
 
 					<Link
 						to='/games'
-						className='inline-block px-5 py-3 transition rounded-full hover:opacity-80 primary-bg animate__bounceIn animate__fadeInLeft'>
+						className='btn btn-primary animate__bounceIn animate__fadeInLeft'>
 						Explore games
 					</Link>
 				</div>

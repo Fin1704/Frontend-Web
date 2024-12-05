@@ -1,6 +1,8 @@
-import { FaChevronDown } from 'react-icons/fa6'
+import React from 'react'
+import { FaChevronDown } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
+import MobileDrawer from './MobileDrawer'
 
 const pages = [
 	{
@@ -79,14 +81,10 @@ const ActiveLink = styled(Link)`
 	}
 `
 
-function Navbar(props) {
+const Navbar = () => {
 	return (
-		<div className='sticky top-0 left-0 z-20 flex items-center justify-between w-full h-16 px-10 bg-black animate__fadeInDown animate__bounceIn'>
-			<Link to='/' className='text-xl font-bold '>
-				S.GAMES
-			</Link>
-
-			<div className='flex h-full gap-10 font-semibold '>
+		<>
+			<div className='hidden h-full gap-10 font-semibold md:flex'>
 				{pages.map((page, i) => (
 					<ActiveLink
 						to={page.href}
@@ -114,7 +112,9 @@ function Navbar(props) {
 					</ActiveLink>
 				))}
 			</div>
-		</div>
+
+			<MobileDrawer pages={pages} />
+		</>
 	)
 }
 
