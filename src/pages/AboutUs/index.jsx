@@ -70,7 +70,7 @@ const AboutUs = () => {
 				btnContent='Contact Us'
 			/>
 
-			<div className='grid max-w-5xl grid-cols-4 gap-10 mx-auto'>
+			<div className='container grid max-w-5xl gap-10 md:grid-cols-4'>
 				{about.map((item) => (
 					<div
 						key={item.prefix}
@@ -84,7 +84,7 @@ const AboutUs = () => {
 			</div>
 
 			<div className='px-10 py-5 bg-dark'>
-				<div className='flex'>
+				<div className='flex flex-col gap-5 md:flex-row'>
 					<div className='flex-1 space-y-5'>
 						<div className='heading'>Our company</div>
 
@@ -118,7 +118,7 @@ const AboutUs = () => {
 					</div>
 
 					<div
-						className='flex-1 bg-center bg-no-repeat bg-contain'
+						className='flex-1 bg-center bg-no-repeat bg-contain min-h-60'
 						style={{
 							backgroundImage:
 								'url("/assets/about_us/coding.png")',
@@ -130,7 +130,7 @@ const AboutUs = () => {
 				<div className='flex flex-col items-center justify-center max-w-5xl gap-10'>
 					<div className='heading'>Technologies</div>
 					<div className='line'></div>
-					<div className='grid grid-cols-4 gap-5'>
+					<div className='grid gap-5 md:grid-cols-4'>
 						{technologies.map((tech) => (
 							<div key={tech.url} className='space-y-3 card'>
 								<img src={tech.url} alt={tech.title} />
@@ -153,7 +153,7 @@ const AboutUs = () => {
 			</div>
 
 			<div className='flex items-center justify-center bg-dark'>
-				<div className='max-w-3xl py-10 space-y-10'>
+				<div className='container py-10 space-y-10'>
 					<div className='text-center heading'>Why us</div>
 					<div className='mx-auto line'></div>
 

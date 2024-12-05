@@ -1,34 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.container {
-	margin: 0 auto;
-}
-
-.no-scrollbar::-webkit-scrollbar {
-	display: none;
-}
-
-.no-scrollbar {
-	-ms-overflow-style: none; /* IE and Edge */
-	scrollbar-width: none; /* Firefox */
-}
-
-@layer base {
-	html {
-		scroll-behavior: smooth;
-		color: #fff;
-	}
-}
-
-@media (min-width: 1280px) {
-	.container {
-		max-width: 1024px;
-	}
-}
-
 @layer components {
+	.inter-tight {
+		font-family: 'Inter Tight', sans-serif;
+		font-optical-sizing: auto;
+		font-weight: 700;
+		font-style: normal;
+	}
+
 	.btn {
 		@apply inline-flex items-center justify-center gap-3 px-5 py-3 transition rounded-full hover:opacity-90;
 	}
@@ -46,14 +31,58 @@
 	}
 
 	.headline {
-		@apply text-5xl font-black;
+		@apply text-3xl inter-tight md:text-5xl md:font-black;
 	}
 
 	.heading {
-		@apply text-3xl font-bold;
+		@apply text-xl md:text-3xl inter-tight;
 	}
 
 	.card {
 		@apply p-5 transition shadow-xl cursor-pointer rounded-2xl hover:-translate-y-2 bg-semiDark;
+	}
+}
+
+body {
+	scroll-behavior: smooth;
+	color: #fff;
+	font-family: 'Inter', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-size: 14px;
+	font-style: normal;
+}
+
+@media (min-width: 768px) {
+	body {
+		font-size: 16px;
+	}
+}
+
+.inter-tight {
+	font-family: 'Inter Tight', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+	display: none;
+}
+
+.no-scrollbar {
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+.container {
+	margin: 0 auto;
+	padding-inline: 16px;
+}
+
+/* REPONSIVE */
+
+@media (min-width: 1280px) {
+	.container {
+		max-width: 1024px;
 	}
 }

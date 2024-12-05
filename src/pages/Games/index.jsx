@@ -21,7 +21,7 @@ const Games = () => {
 				onClick={handleScrollToGames}
 			/>
 
-			<div ref={games} className='container space-y-10'>
+			<div ref={games} className='container space-y-10 md:px-0'>
 				<GalleryCard
 					logoURL='https://galaxy4games.com/wp-content/uploads/2022/08/image_2022-08-24_00-50-47.png'
 					name='Skiesverse'

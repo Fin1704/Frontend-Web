@@ -3,12 +3,12 @@ import 'animate.css'
 import React from 'react'
 
 import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
+import Header from '../components/Header'
 
 const DefaultLayout = ({ children }) => {
 	return (
 		<>
-			<Navbar />
+			<Header />
 
 			{/* Default background and stars animation */}
 			<div

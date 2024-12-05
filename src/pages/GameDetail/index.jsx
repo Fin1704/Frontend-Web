@@ -68,8 +68,8 @@ const GameDetail = () => {
 
 	return (
 		<div className='py-10 space-y-10'>
-			<div className='h-[calc(100vh-64px)] flex gap-5 container overflow-hidden'>
-				<div className='flex-1 space-y-10'>
+			<div className='h-[calc(100vh-64px)] flex flex-col gap-5 md:flex-row container overflow-hidden'>
+				<div className='flex-1 space-y-4 md:space-y-10'>
 					<div className='flex items-center gap-10'>
 						<div
 							className='w-32 h-32 bg-center bg-no-repeat bg-cover shrink-0 rounded-2xl'
@@ -92,7 +92,7 @@ const GameDetail = () => {
 						</div>
 					</div>
 
-					<div className=''>
+					<div>
 						The story begins in the distant future on Earth. The
 						planet has survived a catastrophe. The well-known world
 						has been destroyed, and remnants of civilization are
@@ -149,7 +149,7 @@ const GameDetail = () => {
 
 				<div className='line'></div>
 
-				<div className='grid grid-cols-3 gap-10'>
+				<div className='grid gap-10 md:grid-cols-3'>
 					{results.map((result) => (
 						<div key={result.prefix} className='space-y-5 card'>
 							<div className='text-transparent uppercase headline bg-clip-text primary-bg'>
