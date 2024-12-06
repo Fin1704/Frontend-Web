@@ -33,6 +33,19 @@ const Games = () => {
 				/>
 				
 			</div>
+			<div
+				ref={games}
+				className='flex flex-col items-center justify-center gap-10'>
+				<GalleryCard
+					logoURL='/assets/logo_myfish.png'
+					name='My Fish 2'
+					category='STRATEGY, SIMULATION'
+					description='My Fish 2 is an online simulation and action game where players from around the world can care for and compete with unique battle fish. Build your personalized aquarium, nurture, and train your fish to develop powerful abilities and stats.'
+					thumbnailURL='/assets/myfish/2.webp'
+					slug='../myfish2'
+				/>
+				
+			</div>
 		</div>
 	)
 }

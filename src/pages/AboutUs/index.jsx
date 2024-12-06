@@ -23,23 +23,23 @@ const about = [
 const technologies = [
 	{
 		url: '/assets/about_us/technologies/1.png',
-		title: 'Development',
-		content: 'Unity 3D, C#, .Net, Python',
+		title: 'Tools',
+		content: 'Unity, Thirdweb SDK ',
 	},
 	{
 		url: '/assets/about_us/technologies/2.png',
 		title: '2D Design',
-		content: 'APhotoshop, AIllustrator, Spine2D',
+		content: 'Adobe Photoshop, Adobe Illustrator',
 	},
 	{
 		url: '/assets/about_us/technologies/3.png',
 		title: '3D Design',
-		content: 'Maya, Houdini',
+		content: 'Maya, Blender',
 	},
 	{
 		url: '/assets/about_us/technologies/4.png',
 		title: 'Web3',
-		content: 'Etherium, Polygon, Opensea, Metamask, etc.',
+		content: 'EVM chains, Solana, Move chains (Aptos, Sui, Movment), Web3 wallets, Substrate, Telegram games, etc...',
 	},
 ]
 

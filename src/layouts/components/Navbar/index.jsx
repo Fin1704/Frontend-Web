@@ -11,7 +11,10 @@ const pages = [
 				href: '/alphalt-thunder',
 				text: 'Alphalt Thunder',
 			},
-		
+			{
+				href: '/myfish2',
+				text: 'My Fish 2',
+			},
 		],
 	},
 	// {

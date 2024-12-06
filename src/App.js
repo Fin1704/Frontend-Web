@@ -7,6 +7,7 @@ import Contact from './pages/Contacts'
 import GameDetail from './pages/GameDetail'
 import Games from './pages/Games'
 import Home from './pages/Home'
+import MyFish2 from './pages/MyFish2'
 
 function App() {
 	return (
@@ -18,6 +19,7 @@ function App() {
 					<Route path='games' element={<Games />} />
 					<Route path='games/:slug' element={<GameDetail />} />
 					<Route path='alphalt-thunder' element={<AphaltThunder />} />
+					<Route path='myfish2' element={<MyFish2 />} />
 					<Route path='about-us' element={<AboutUs />} />
 				</Routes>
 			</DefaultLayout>
