@@ -12,11 +12,10 @@ const Games = () => {
 		<div className='pb-10'>
 			<Intro
 				title='Our Games / Projects'
-				description='As a product company, we develop our products from
+				description='As a product studio, we develop our products from
 						scratch to market launch. To do this, we use our modular
 						system and improve it constantly. Here is the list of
-						our internal casual and web3 products created by the
-						Galaxy4games team.'
+						our internal casual and web3 products.'
 				btnContent='Get Started'
 				onClick={handleScrollToGames}
 			/>
