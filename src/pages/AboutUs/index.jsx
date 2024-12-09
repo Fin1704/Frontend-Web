@@ -75,7 +75,7 @@ const AboutUs = () => {
 <div className="px-10 py-5 bg-dark flex justify-center items-center">
   <div className="flex max-w-xl">
     <div className="flex-1 space-y-5">
-      <div className="heading text-center">S.GameX Studio</div>
+      <div className="heading text-center" style={{ color: "#f8ffbc" }}>S.GameX Studio</div>
 
       <div className="primary-bar mx-auto"></div>
 
@@ -83,7 +83,7 @@ const AboutUs = () => {
         Our team boasts seasoned developers, creative artists, game designers, and blockchain specialists, all working in harmony to build games that captivate players while leveraging the immense potential of Web3 technologies. With a proven track record of success across platforms like mobile, PC, and Roblox, we have the experience and the vision to create high-quality games tailored for the future of decentralized gaming.
       </div>
 
-      <div className="heading text-center">The Future of Gaming:</div>
+      <div className="heading text-center" style={{ color: "#f8ffbc" }}>The Future of Gaming:</div>
       <div className="primary-bar mx-auto"></div>
       <div className="text-justify space-y-3">
         <div>
@@ -106,7 +106,7 @@ const AboutUs = () => {
 
 			<div className='flex items-center justify-center'>
 				<div className='flex flex-col items-center justify-center max-w-5xl gap-10'>
-					<div className='heading'>Technologies</div>
+					<div className='heading' style={{ color: "#f8ffbc" }}>Technologies</div>
 					<div className='primary-bar'></div>
 					<div className='grid grid-cols-4 gap-5'>
 						{technologies.map((tech) => (
@@ -132,7 +132,7 @@ const AboutUs = () => {
 
 			<div className='flex items-center justify-center bg-dark'>
 				<div className='max-w-3xl py-10 space-y-10'>
-					<div className='text-center heading'>Why us</div>
+					<div className='text-center heading' style={{ color: "#f8ffbc" }}>Why us</div>
 					<div className='mx-auto primary-bar'></div>
 
 					{whyUs.map((r, i) => (

@@ -41,7 +41,7 @@ const PartnersInvestors = () => {
 				{partners.map((partner) => (
 					<div
 						key={partner.name}
-						style={{ width: '100px', height: '100px' }}>
+						style={{ width: '150px', height: 'auto' }}>
 						<img
 							src={partner.icon}
 							alt={partner.name}
