@@ -55,7 +55,7 @@ const AboutUs = () => {
 		<div className='pb-10 space-y-10'>
 			<Intro
 				title='About us'
-				description="S.GAMES Studio is a powerhouse of creativity and expertise, established in 2020 by a team of highly skilled developers during the gaming industry's surge. From our beginnings as a trusted outsourcing partner for leading Japanese gaming companies, we’ve evolved into a pioneering force in blockchain and Web3 game development, equipped with all the necessary skills and talent to deliver outstanding gaming experiences."
+				description="S.GameX Studio is a powerhouse of creativity and expertise, established in 2020 by a team of highly skilled developers during the gaming industry's surge. From our beginnings as a trusted outsourcing partner for leading Japanese gaming companies, we’ve evolved into a pioneering force in blockchain and Web3 game development, equipped with all the necessary skills and talent to deliver outstanding gaming experiences."
 				btnContent='Contact Us'
 			/>
 
@@ -72,35 +72,37 @@ const AboutUs = () => {
 				))}
 			</div> */}
 
-			<div className='px-10 py-5 bg-dark'>
-				<div className='flex'>
-					<div className='flex-1 space-y-5'>
-						<div className='heading'>S.GAMES Studio</div>
+<div className="px-10 py-5 bg-dark flex justify-center items-center">
+  <div className="flex max-w-xl">
+    <div className="flex-1 space-y-5">
+      <div className="heading text-center">S.GameX Studio</div>
 
-						<div className='primary-bar'></div>
+      <div className="primary-bar mx-auto"></div>
 
-						<div>
-							Our team boasts seasoned developers, creative artists, game designers, and blockchain specialists, all working in harmony to build games that captivate players while leveraging the immense potential of Web3 technologies. With a proven track record of success across platforms like mobile, PC, and Roblox, we have the experience and the vision to create high-quality games tailored for the future of decentralized gaming.
-						</div>
+      <div className="text-justify">
+        Our team boasts seasoned developers, creative artists, game designers, and blockchain specialists, all working in harmony to build games that captivate players while leveraging the immense potential of Web3 technologies. With a proven track record of success across platforms like mobile, PC, and Roblox, we have the experience and the vision to create high-quality games tailored for the future of decentralized gaming.
+      </div>
 
-						<div className='heading'>The Future of Gaming:</div>
-						<div className='primary-bar'></div>
-						<div>
-							<div>With the explosion of GameFi and Web3, S.GAMES Studio is poised to deliver groundbreaking gaming experiences that combine innovation with mass-market appeal. We are targeting the rapidly growing gaming market with a focus on creating transparent, sustainable, and engaging ecosystems where players can truly own and trade in-game assets.</div>
-							<div>We are not just building games; we are building the future of gaming—one that is decentralized, player-focused, and endlessly thrilling. Join us on this journey as we redefine the gaming industry!</div>
-						</div>
+      <div className="heading text-center">The Future of Gaming:</div>
+      <div className="primary-bar mx-auto"></div>
+      <div className="text-justify space-y-3">
+        <div>
+          With the explosion of GameFi and Web3, S.GameX Studio is poised to deliver groundbreaking gaming experiences that combine innovation with mass-market appeal. We are targeting the rapidly growing gaming market with a focus on creating transparent, sustainable, and engaging ecosystems where players can truly own and trade in-game assets.
+        </div>
+        <div>
+          We are not just building games; we are building the future of gaming—one that is decentralized, player-focused, and endlessly thrilling. Join us on this journey as we redefine the gaming industry!
+        </div>
+      </div>
+    </div>
 
-						
-					</div>
-
-					<div
-						className='flex-1 bg-center bg-no-repeat bg-contain'
-						style={{
-							backgroundImage:
-								'url("/assets/about_us/coding.png")',
-						}}></div>
-				</div>
-			</div>
+    {/* <div
+      className="flex-1 bg-center bg-no-repeat bg-contain"
+      style={{
+        backgroundImage: 'url("/assets/about_us/coding.png")',
+      }}
+    ></div> */}
+  </div>
+</div>
 
 			<div className='flex items-center justify-center'>
 				<div className='flex flex-col items-center justify-center max-w-5xl gap-10'>

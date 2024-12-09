@@ -112,7 +112,7 @@ const Footer = () => {
 
 				<Box mt={4} textAlign='center'>
 					<Typography variant='body2' color='inherit'>
-						© {new Date().getFullYear()} S.GAMES. All rights
+						© {new Date().getFullYear()} S.GameX. All rights
 						reserved.
 					</Typography>
 				</Box>

@@ -36,7 +36,7 @@ function Home() {
 
 				<div className="absolute bottom-0 left-0 max-w-3xl p-10 space-y-3 text-white pb-20">
   <div className="font-bold text-white text-7xl animate__bounceIn animate__fadeInLeft text-xl">
-    At S.GAMES Studio
+    At S.GameX Studio
   </div>
 
   <div className="animate__bounceIn animate__fadeInLeft text-sm text-justify">
