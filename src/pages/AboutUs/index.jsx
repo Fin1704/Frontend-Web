@@ -45,8 +45,8 @@ const technologies = [
 
 const whyUs = [
 	'Comprehensive Expertise: A complete team of experts, from traditional game development to advanced blockchain integration.',
-	'Proven Track Record: Successful projects like the widely acclaimed "Doraemon Racing Game" and participation in international hackathons such as Base, Shido, and Taraxa, where we\'ve earned prestigious awards.',
-'Multichain Capability: Skilled in deploying games on prominent platforms, including Base, Aptos, Taraxa, opBNB, Sui, Dymension, and Tanssi.',
+	'Proven Track Record: Successful projects like the widely acclaimed "Doraemon Racing Game" and participation in international hackathons such as Base, Shido, and Taraxa, etc..., where we\'ve earned prestigious awards.',
+'Multichain Capability: Skilled in deploying games on prominent platforms, including EVM chains, Base, Aptos, Taraxa, opBNB, Sui, Dymension, Solana, Move chains (Atops, Sui, Movement) and Tanssi.',
 'Diverse Game Portfolio: Specialized in casual, strategic, racing, and PVP multiplayer games with on-chain interaction and NFT integration.'
 ]
 
